@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('roses.jpg'); 
+  background-size:  cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 300px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 20px; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+#confirmarBtn {
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block; 
+}
+
+#confirmarBtn:hover {
+  background-color: #d44e8c;
+}
+
+.slideshow img {
+  max-width: 100%;
+  max-height: 400px; 
+  border-radius: 10px; 
+  margin: 20px auto; 
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+#audio {
+  width: 80%;
+  margin-top: 20px; 
+}
+
+
+#audio::-webkit-media-controls-panel {
+  background-color: #ffffff; 
+  border-radius: 10px; 
+}
+
+/* Estilizando os botões de controle */
+#audio::-webkit-media-controls-play-button,
+#audio::-webkit-media-controls-pause-button {
+  background-color: #ffffff; 
+  color: white; 
+  border-radius: 50%; 
+  width: 30px; 
+  height: 30px; 
+  margin: 0 10px; 
+}
+
+/* Estilizando a barra de progresso */
+#audio::-webkit-media-controls-current-time-display,
+#audio::-webkit-media-controls-time-remaining-display,
+#audio::-webkit-media-controls-timeline {
+  color: #ffffff;
+}
+
+/* Estilizando o controle de volume */
+#audio::-webkit-media-controls-volume-slider {
+  width: 100px; 
+}

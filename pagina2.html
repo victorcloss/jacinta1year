@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontro Romântico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feliz 1 ano, Eu Te Amo!</h1>
+        <h2>Muito obrigado por todos esses momentos incriveis juntos!</h2>
+        <p>play na música e deixa a mágica acontecer!</p>
+        <audio id="audio" controls autoplay>
+            <source src="orch.mp3" type="audio/mp3">    
+        </audio>
+        <div id="slideshow" class="slideshow">
+            <img src="ft1.jpg" alt="Imagem 1">
+            <img src="ft2.jpg" alt="Imagem 2">
+            <img src="ft3.jpg" alt="Imagem 3">
+            <img src="ft4.jpg" alt="Imagem 4">
+            <img src="ft5.jpg" alt="Imagem 5">
+            <img src="ft6.jpg" alt="Imagem 6">
+            <img src="ft7.jpg" alt="Imagem 7">
+            <img src="ft8.jpg" alt="Imagem 8">
+            <img src="ft9.jpg" alt="Imagem 9">
+            <img src="ft10.jpg" alt="Imagem 10">
+            <img src="ft11.jpg" alt="Imagem 11">
+            <img src="ft12.jpg" alt="Imagem 12">
+            <img src="ft13.jpg" alt="Imagem 13">
+            <img src="ft14.jpg" alt="Imagem 14">
+            <img src="ft15.jpg" alt="Imagem 15">
+            <img src="ft16.jpg" alt="Imagem 16">
+            <img src="ft17.jpg" alt="Imagem 17">
+            <img src="ft18.jpg" alt="Imagem 18">
+            <img src="ft19.jpg" alt="Imagem 19">
+            <img src="ft20.jpg" alt="Imagem 20">
+            <img src="ft21.jpg" alt="Imagem 21">
+            <img src="ft22.jpg" alt="Imagem 22">
+            <img src="ft23.jpg" alt="Imagem 23">
+            <img src="ft24.jpg" alt="Imagem 24">
+            <img src="ft25.jpg" alt="Imagem 25">
+            <img src="ft26.jpg" alt="Imagem 26">
+            <img src="ft27.jpg" alt="Imagem 27">
+            <img src="ft28.jpg" alt="Imagem 28">
+            <img src="ft29.jpg" alt="Imagem 29">
+            <img src="ft30.jpg" alt="Imagem 30">
+            <img src="ft31.jpg" alt="Imagem 31">
+            <img src="ft32.jpg" alt="Imagem 32">
+            <img src="ft33.jpg" alt="Imagem 33">
+            <img src="ft34.jpg" alt="Imagem 34">
+        </div>
+    </div>
+
+    <script>
+
+        var images = document.querySelectorAll("#slideshow img");
+        var current = 0;
+        var slideshowInterval;
+
+        function nextSlide() {
+            images[current].style.display = "none";
+            current = (current + 1) % images.length;
+            images[current].style.display = "block";
+        }
+
+        function startSlideshow() {
+            slideshowInterval = setInterval(nextSlide, 3000);
+        }
+
+        function stopSlideshow() {
+            clearInterval(slideshowInterval);
+        }
+
+        document.getElementById('audio').addEventListener('play', startSlideshow);
+        document.getElementById('audio').addEventListener('pause', stopSlideshow);
+    
+    </script>
+</body>
+</html>
